@@ -6,10 +6,8 @@ void main() => runApp( MyApp());
 var startDate = new DateTime(2019, 9, 1);
 var endDate = new DateTime.now();
 var difference = endDate.difference(startDate);
-// print([difference.inDays, difference.inHours,difference.inMinutes]);//d6与d7相差的天数与小时,分钟 [0, 22, 1370]
+// print([difference.inDays, difference.inHours,difference.inMinutes]);//相差的天数与小时,分钟 
 var week = (difference.inDays % 7) == 0 ? (difference.inDays / 7).truncate() : (difference.inDays / 7).truncate() + 1 ;
-// print([difference.inDays, week]);
-// print([(difference.inDays % 7)]);
 
 
 class MyApp extends StatelessWidget{
